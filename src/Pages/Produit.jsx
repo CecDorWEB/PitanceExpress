@@ -10,8 +10,9 @@ function Produit() {
 
   console.log(id);
   const recipe = medievalRecipes[id - 1];
-  console.log(recipe);
   //Il faudra afficher le résultat de la carte sur laquelle on aura cliqué.
+
+  console.log(recipe);
 
   const [stateQuantity, setStateQuantity] = useState(recipe.quantity);
 
@@ -26,7 +27,7 @@ function Produit() {
       setStateQuantity(stateQuantity - 1);
     }
   };
-  console.log("new", recipe.quantity);
+
   return (
     <div className="produit">
       <section>
