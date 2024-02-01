@@ -1,9 +1,23 @@
+import { useContext } from "react";
+import FavoriteContext from "../Context/FavoriteContext";
 import "../Styles/produit.css";
 import medievalRecipes from "../medievalRecipes";
 
 function Produit() {
+  const { quantity, setQuantity } = useContext(FavoriteContext);
+
   const recipe = medievalRecipes[2];
-  console.info(recipe);
+  //Il faudra afficher le résultat de la carte sur laquelle on aura cliqué.
+
+  const addArticle = () => {
+    setQuantity(quantity + 1);
+  };
+
+  const removeArticle = () => {
+    if (quantity > 0) {
+      setQuantity(quantity - 1);
+    }
+  };
   return (
     <div className="produit">
       <section>
@@ -12,12 +26,12 @@ function Produit() {
         <div className="description">
           <p>Category: {recipe.category}</p>
           <p>Allergen: {recipe.allergen}</p>
-          <h2>Price: {recipe.price} ecus</h2>
+          <h3>Price: {recipe.price} ecus</h3>
         </div>
         <div className="quantity">
-          <button>-</button>
-          <div>0</div>
-          <button>+</button>
+          <button onClick={removeArticle}>-</button>
+          <div>{quantity}</div>
+          <button onClick={addArticle}>+</button>
         </div>
         <button className="RedButton">Ajouter</button>
       </section>
