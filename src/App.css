@@ -14,8 +14,11 @@
   --red-color: #701920;
   --gray-color: #596e79;
 
-  --font-title: "EnchantedLand";
-  --font-text: "OldLondon";
+  --font-text: "EnchantedLand";
+  --font-title: "OldLondon";
+
+  --border-radius-button: 13px;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 button {
