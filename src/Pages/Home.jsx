@@ -1,16 +1,23 @@
+import { Link } from "react-router-dom";
+
 import "../Styles/home.css";
 
 function Home() {
   return (
-    <div>
-      <h1>Pitance Express</h1>
-      <p>
+    <div className="home_page">
+      <h1 className="home_title">Pitance Express</h1>
+      <p className="home_msg">
         Oyé Oyé ! Soyez les bienvenues sur les pages électroniques de Pitance
         Express, où vous pouvez jouir des délices médiévaux, délivrés
-        promptement jusqu&aposà votre demeure par notre fidèle charette,
+        promptement jusqu&apos;à votre demeure par notre fidèle charette,
         assurant ainsi une expérience gastronomique sans pareille.
       </p>
-      <button>Recevoir la délivrance par l&aposentremise d&aposun gueu</button>
+      <Link to="/Menu">
+        <button className="home_button">
+          Recevoir la délivrance par l&apos;entremise d&apos;un gueu
+        </button>
+      </Link>
+      <img src="src\assets\welcome.png" className="home_img" />
     </div>
   );
 }
