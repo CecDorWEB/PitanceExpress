@@ -1,12 +1,16 @@
 import { useContext } from "react";
+import { useParams } from "react-router-dom";
+
 import FavoriteContext from "../Context/FavoriteContext";
 import "../Styles/produit.css";
 import medievalRecipes from "../medievalRecipes";
 
 function Produit() {
+  const { id } = useParams();
   const { quantity, setQuantity } = useContext(FavoriteContext);
-
-  const recipe = medievalRecipes[2];
+  console.log(id);
+  const recipe = medievalRecipes[id - 1];
+  console.log(recipe);
   //Il faudra afficher le résultat de la carte sur laquelle on aura cliqué.
 
   const addArticle = () => {

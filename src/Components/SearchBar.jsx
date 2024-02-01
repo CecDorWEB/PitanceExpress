@@ -24,7 +24,11 @@ function SearchBar() {
       <div className="search_button">
         {filteredSuggestions.length > 0 && (
           <Link to={`/Produit/${filteredSuggestions[0].id}`}>
-            <img src="src\assets\loupe.png" alt="search" />
+            <img
+              src="src\assets\loupe.png"
+              alt="search"
+              className="search_button_img"
+            />
           </Link>
         )}
       </div>
