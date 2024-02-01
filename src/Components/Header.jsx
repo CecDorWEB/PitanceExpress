@@ -1,5 +1,5 @@
 import "../Styles/Header.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const BurgerMenu = () => {
@@ -11,7 +11,7 @@ const BurgerMenu = () => {
 
   return (
     <div className="mainContainer">
-      <Link to="/Home">
+      <Link to="/">
         <img className="logo" src="src\assets\logo.png" alt="logo-icon" />
       </Link>
 
@@ -29,16 +29,16 @@ const BurgerMenu = () => {
           <div className="menu">
             <ul>
               <li>
-                <Link to="/Home">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/Menu">Menu</Link>
               </li>
               <li>
-                <Link to="/Favorit">Favorite</Link>
+                <Link to="/Favorite">Favorite</Link>
               </li>
               <li>
-                <Link to="/Bourse">Cash</Link>
+                <Link to="/Cash">Cash</Link>
               </li>
             </ul>
           </div>

@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="bottomNav">
-      <button className="bottomIcon1">
-        <Link to="/Home"></Link>
-      </button>
+      <Link to="/">
+        <button className="bottomIcon1"> </button>
+      </Link>
       <span className="spanLine"></span>
-      <button className="bottomIcon2">
-        <Link to="/Menu"></Link>
-      </button>
+      <Link to="/Menu">
+        <button className="bottomIcon2"> </button>
+      </Link>
       <span className="spanLine"></span>
-      <button className="bottomIcon3">
-        <Link to="/Favorite"></Link>
-      </button>
+      <Link to="/Favorite">
+        <button className="bottomIcon3"> </button>
+      </Link>
       <span className="spanLine"></span>
-      <button className="bottomIcon4">
-        <Link to="/Cash"></Link>
-      </button>
+      <Link to="/Cash">
+        <button className="bottomIcon4"></button>
+      </Link>
     </div>
   );
 }
