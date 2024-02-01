@@ -1,0 +1,37 @@
+.search_bar {
+  position: relative;
+}
+
+.search_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+.search_button > img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+.search_button_img {
+  height: 25px;
+  width: 25px;
+  display: block;
+  margin: auto;
+}
+
+.search_input {
+  text-align: center;
+  padding: 0.6rem 2.6rem 0.6rem 40px;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 70%;
+}
+
+.search_input::placeholder {
+  font-family: var(--font-text);
+}
