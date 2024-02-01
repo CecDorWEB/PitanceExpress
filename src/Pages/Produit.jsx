@@ -1,28 +1,42 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import FavoriteContext from "../Context/FavoriteContext";
 import "../Styles/produit.css";
 import medievalRecipes from "../medievalRecipes";
+import { FavoriteButton } from "../Components/FavoriteButton";
 
 function Produit() {
-  const { quantity, setQuantity } = useContext(FavoriteContext);
-
-  const recipe = medievalRecipes[2];
+  const recipe = medievalRecipes[3];
+  console.log(recipe);
   //Il faudra afficher le résultat de la carte sur laquelle on aura cliqué.
 
+  const [stateQuantity, setStateQuantity] = useState(recipe.quantity);
+
+  const { setQuantityTotal } = useContext(FavoriteContext);
+  const { setFavorite } = useContext(FavoriteContext);
+  const [favoriteImgIndex, setFavoriteImgIndex] = useState(0);
+
   const addArticle = () => {
-    setQuantity(quantity + 1);
+    setStateQuantity(stateQuantity + 1);
   };
 
   const removeArticle = () => {
-    if (quantity > 0) {
-      setQuantity(quantity - 1);
+    if (stateQuantity > 0) {
+      setStateQuantity(stateQuantity - 1);
     }
   };
+  console.log("new", recipe.quantity);
   return (
     <div className="produit">
       <section>
-        <img src={recipe.img}></img>
-        <h1>{recipe.name}</h1>
+        <img className="recipe" src={recipe.img}></img>
+        <div className="title">
+          <h1>{recipe.name}</h1>
+          <FavoriteButton
+            recipe={recipe}
+            favoriteImgIndex={favoriteImgIndex}
+            setFavoriteImgIndex={setFavoriteImgIndex}
+          />
+        </div>
         <div className="description">
           <p>Category: {recipe.category}</p>
           <p>Allergen: {recipe.allergen}</p>
@@ -30,7 +44,7 @@ function Produit() {
         </div>
         <div className="quantity">
           <button onClick={removeArticle}>-</button>
-          <div>{quantity}</div>
+          <div>{stateQuantity}</div>
           <button onClick={addArticle}>+</button>
         </div>
         <button className="RedButton">Ajouter</button>
