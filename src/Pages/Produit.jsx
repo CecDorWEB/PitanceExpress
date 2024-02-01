@@ -8,11 +8,8 @@ import { FavoriteButton } from "../Components/FavoriteButton";
 function Produit() {
   const { id } = useParams();
 
-  console.log(id);
   const recipe = medievalRecipes[id - 1];
   //Il faudra afficher le résultat de la carte sur laquelle on aura cliqué.
-
-  console.log(recipe);
 
   const [stateQuantity, setStateQuantity] = useState(recipe.quantity);
 
