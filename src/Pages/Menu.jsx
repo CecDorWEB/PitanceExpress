@@ -1,4 +1,3 @@
-
 import FiltersMenu from "../Components/FiltersMenu";
 import CardRecipe from "../Components/CardRecipe";
 
@@ -9,13 +8,9 @@ import "../Styles/menu.css";
 function Menu() {
   return (
     <div>
-
       <FiltersMenu />
-      <CardRecipe />
-
-      <h2>Menu</h2>
       <SearchBar />
-
+      <CardRecipe />
     </div>
   );
 }
