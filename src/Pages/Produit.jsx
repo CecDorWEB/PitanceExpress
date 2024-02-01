@@ -1,14 +1,13 @@
 import { useParams } from "react-router-dom";
-import { useContext, useState } from "react";
+import { useState } from "react";
 
-import FavoriteContext from "../Context/FavoriteContext";
 import "../Styles/produit.css";
 import medievalRecipes from "../medievalRecipes";
 import { FavoriteButton } from "../Components/FavoriteButton";
 
 function Produit() {
   const { id } = useParams();
-  const { quantity, setQuantity } = useContext(FavoriteContext);
+
   console.log(id);
   const recipe = medievalRecipes[id - 1];
   console.log(recipe);
@@ -16,8 +15,6 @@ function Produit() {
 
   const [stateQuantity, setStateQuantity] = useState(recipe.quantity);
 
-  const { setQuantityTotal } = useContext(FavoriteContext);
-  const { setFavorite } = useContext(FavoriteContext);
   const [favoriteImgIndex, setFavoriteImgIndex] = useState(0);
 
   const addArticle = () => {
