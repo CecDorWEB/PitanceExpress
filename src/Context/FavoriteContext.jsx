@@ -5,12 +5,12 @@ const FavoriteContext = createContext();
 // eslint-disable-next-line react/prop-types
 export function FavoriteProvider({ children }) {
   const [favorite, setFavorite] = useState([]);
-  const [quantity, setQuantity] = useState(0);
+  const [quantityTotal, setQuantityTotal] = useState(0);
 
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
     <FavoriteContext.Provider
-      value={{ favorite, setFavorite, quantity, setQuantity }}
+      value={{ favorite, setFavorite, quantityTotal, setQuantityTotal }}
     >
       {children}
     </FavoriteContext.Provider>
