@@ -1,0 +1,56 @@
+.bottomNav {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  border: solid 0.1 gray;
+  border-radius: 13px 13px 0px 0px;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 5, 5, 0.1);
+}
+
+.bottomIcon1 {
+  background: url("src/assets/home.png") no-repeat center;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background-size: cover;
+  background-color: white;
+}
+.bottomIcon2 {
+  background: url("src/assets/charette.png") no-repeat center;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background-size: cover;
+  background-color: white;
+}
+
+.bottomIcon3 {
+  background: url("src/assets/favoris.png") no-repeat center;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background-size: cover;
+  background-color: white;
+}
+.bottomIcon4 {
+  background: url("src/assets/bourse.png") no-repeat center;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background-size: cover;
+  background-color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+.spanLine {
+  background-color: lightgray;
+  width: 0.7px;
+  height: 50px;
+  margin: 0.5%;
+}
