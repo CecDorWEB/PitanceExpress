@@ -1,3 +1,5 @@
+import { Outlet } from "react-router-dom";
+
 import "./App.css";
 import medievalRecipes from "./medievalRecipes";
 
@@ -11,6 +13,10 @@ function App() {
       <img src={recipe[0].img}></img>
       <p>Categrory:{recipe[0].category}</p>
       <p>Allergen: {recipe[0].allergen}</p>
+    <main>
+      <Outlet />
+    </main>
+    
     </>
   );
 }
