@@ -1,9 +1,11 @@
-import "../Styles/menu.css"
+import "../Styles/menu.css";
 
 function Menu() {
   return (
-    <div>Menu</div>
-  )
+    <div>
+      <h2>Menu</h2>
+    </div>
+  );
 }
 
-export default Menu
+export default Menu;

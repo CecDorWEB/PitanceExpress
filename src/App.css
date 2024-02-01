@@ -1,0 +1,31 @@
+* {
+  background-color: #f2eee9;
+  max-width: 430px;
+  text-decoration: none;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  --light-color: #f2eee9;
+  --red-color: #701920;
+  --gray-color: #596e79;
+
+  --font-title: "EnchantedLand";
+  --font-text: "OldLondon";
+}
+
+button {
+  all: unset;
+}
+
+@font-face {
+  font-family: "EnchantedLand";
+  src: url(./assets/Enchanted\ Land.otf);
+
+  font-family: "OldLondon";
+  src: url(./assets/OldLondon.ttf);
+}
