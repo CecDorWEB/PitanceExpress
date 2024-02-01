@@ -149,5 +149,5 @@
 }
 
 ::backdrop {
-    background: rgba(red, green, rgba(0, 0, 255, 0.093), alpha);
+    background: rgba(red, green, rgba(0, 0, 255, 0.02), alpha);
 }
