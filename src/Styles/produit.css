@@ -1,0 +1,20 @@
+.produit {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 10px auto;
+}
+.produit img {
+  max-height: 150px;
+  min-width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.description {
+  text-align: start;
+}
+.quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
