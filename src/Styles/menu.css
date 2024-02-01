@@ -101,3 +101,22 @@ figure > figcaption > h1 {
 }
 
 /* FILTERS MENU */
+
+.buttons_menu {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: var(--font-text);
+}
+
+.buttons_menu > button {
+  margin: 0.5em;
+  color: #fff;
+  background-color: var(--gray-color);
+  padding: 0.5em 2em;
+  border-radius: 13px;
+  box-shadow: var(--shadow);
+}
+
+.buttons_menu > button.active {
+  background-color: var(--red-color);
+}
