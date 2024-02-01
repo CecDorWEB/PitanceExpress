@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         element: <Favorite />,
       },
       {
-        path: "/Cash",
+        path: "/Cash/:id",
         element: <Cash />,
       },
       {
