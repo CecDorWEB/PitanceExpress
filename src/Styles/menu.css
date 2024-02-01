@@ -120,3 +120,43 @@ figure > figcaption > h1 {
 .buttons_menu > button.active {
   background-color: var(--red-color);
 }
+
+/* BANDEAU PROMO */
+
+.bandeau_promo {
+  display: flex;
+  width: 100%;
+  background-color: #dccb9f;
+  padding: 2em;
+  margin: 2em 0em 3em 0em;
+}
+
+.left > p {
+  font-family: var(--font-text);
+  font-size: 16px;
+  padding-right: 2em;
+}
+
+.right > img {
+  width: 130px;
+  border-radius: 100%;
+}
+
+.right > p {
+  font-family: var(--font-text);
+  font-size: 25px;
+  color: #fff;
+  transform: rotate(20deg) translateX(-15px) translateY(-18px);
+}
+
+.left > button {
+  margin: 1.5em 0em 0.5em 0em;
+  font-size: 14px;
+  color: #fff;
+  padding: 0.5em 2em;
+  border-radius: 13px;
+  box-shadow: var(--shadow);
+  background-color: var(--red-color);
+  font-family: var(--font-text);
+  width: 60%;
+}
