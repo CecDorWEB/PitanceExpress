@@ -61,7 +61,7 @@ const medievalRecipes = [
   },
   {
     id: 7,
-    name: "Pain Médiéval et le tranchoir au ragout d’orges et de bière d’hobb trois doigts",
+    name: "Pain Médiéval et bière trois doigts",
     img: "https://www.thedirtyalchimiste.com/wp-content/uploads/2022/08/301217915_401271518806354_312447361898100088_n-scaled.jpg",
     price: 7,
     category: "main course",

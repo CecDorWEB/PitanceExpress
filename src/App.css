@@ -1,5 +1,4 @@
 * {
-  background-color: #f2eee9;
   max-width: 430px;
   text-decoration: none;
   list-style: none;
@@ -9,16 +8,24 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  background-color: #f2eee9;
+}
+
 #root {
   --light-color: #f2eee9;
   --red-color: rgb(112, 25, 32);
   --gray-color: #596e79;
 
-  --font-text: "EnchantedLand";
+
   --font-title: "OldLondon";
+  --font-text: "Macondo", "cursive";
+
 
   --border-radius-button: 13px;
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
 }
 
 button {
@@ -26,9 +33,6 @@ button {
 }
 
 @font-face {
-  font-family: "EnchantedLand";
-  src: url(./assets/Enchanted\ Land.otf);
-
   font-family: "OldLondon";
   src: url(./assets/OldLondon.ttf);
 }
