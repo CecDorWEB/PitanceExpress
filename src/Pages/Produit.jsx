@@ -1,5 +1,4 @@
-import { useContext, useState } from "react";
-import FavoriteContext from "../Context/FavoriteContext";
+import { useState } from "react";
 import "../Styles/produit.css";
 import medievalRecipes from "../medievalRecipes";
 import { FavoriteButton } from "../Components/FavoriteButton";
@@ -11,8 +10,6 @@ function Produit() {
 
   const [stateQuantity, setStateQuantity] = useState(recipe.quantity);
 
-  const { setQuantityTotal } = useContext(FavoriteContext);
-  const { setFavorite } = useContext(FavoriteContext);
   const [favoriteImgIndex, setFavoriteImgIndex] = useState(0);
 
   const addArticle = () => {
