@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useContext } from "react";
 import FavoriteContext from "../Context/FavoriteContext";
 
@@ -7,9 +8,9 @@ export function FavoriteButton({
   recipe,
 }) {
   const imgSrc = [
-    { src: "src/assets/favoris.png" },
+    { src: "/src/assets/favoris.png" },
     {
-      src: "src/assets/favoris-red.png",
+      src: "/src/assets/favoris-red.png",
     },
   ];
 
