@@ -5,12 +5,14 @@
   margin: 10px auto;
   font-family: var(--font-text);
 }
-.produit img {
-  max-height: 150px;
+.produit .recipe {
+  max-height: 200px;
   min-width: 300px;
   object-fit: cover;
+  position: 80%;
   border-radius: 10px;
   box-shadow: var(--shadow);
+  margin: 10px 0;
 }
 .description {
   text-align: start;
@@ -24,6 +26,11 @@
 }
 .produit p {
   padding: 5px 0;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 .quantity {
   display: flex;

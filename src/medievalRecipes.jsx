@@ -7,6 +7,7 @@ const medievalRecipes = [
     category: "main course",
     allergen: "-",
     lien: "",
+    quantity: 0,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const medievalRecipes = [
     category: "main course",
     allergen: "wheat",
     lien: "https://recettemedievale.fr/farcou-a-loseille/",
+    quantity: 0,
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const medievalRecipes = [
     category: "main course",
     allergen: "-",
     recette: "",
+    quantity: 0,
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const medievalRecipes = [
     category: "main course",
     allergen: "cheese, egg",
     recette: "https://recettemedievale.fr/tourte-de-champignons/",
+    quantity: 0,
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const medievalRecipes = [
     category: "main course",
     allergen: "wheat, egg",
     recette: "https://www.cuisineaz.com/recettes/fouace-28973.aspx",
+    quantity: 0,
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ const medievalRecipes = [
     category: "main course",
     allergen: "-",
     recette: "",
+    quantity: 0,
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ const medievalRecipes = [
     category: "main course",
     allergen: "-",
     recette: "",
+    quantity: 0,
   },
   {
     id: 8,
@@ -70,6 +77,7 @@ const medievalRecipes = [
     category: "main course",
     allergen: "milk",
     recette: "https://recettemedievale.fr/poree-blanche-a-jour-de-careme/",
+    quantity: 0,
   },
   {
     id: 9,
@@ -79,6 +87,7 @@ const medievalRecipes = [
     category: "dessert",
     allergen: "milk, egg",
     recette: "https://recettemedievale.fr/darioles/",
+    quantity: 0,
   },
   {
     id: 10,
@@ -88,6 +97,7 @@ const medievalRecipes = [
     category: "dessert",
     allergen: "-",
     recette: "",
+    quantity: 0,
   },
   {
     id: 11,
@@ -97,6 +107,7 @@ const medievalRecipes = [
     category: "drink",
     allergen: "-",
     recette: "https://recettemedievale.fr/bochet/",
+    quantity: 0,
   },
   {
     id: 12,
@@ -106,6 +117,7 @@ const medievalRecipes = [
     category: "main course",
     allergen: "-",
     recette: "https://recettemedievale.fr/hericoq-dagneau/",
+    quantity: 0,
   },
   {
     id: 13,
@@ -115,6 +127,7 @@ const medievalRecipes = [
     category: "main course",
     allergen: "-",
     recette: "",
+    quantity: 0,
   },
   {
     id: 14,
@@ -124,6 +137,7 @@ const medievalRecipes = [
     category: "dessert",
     allergen: "egg, milk, butter",
     recette: "https://recettemedievale.fr/letelorye/",
+    quantity: 0,
   },
   {
     id: 15,
@@ -133,6 +147,7 @@ const medievalRecipes = [
     category: "main course",
     allergen: "-",
     recette: "",
+    quantity: 0,
   },
   {
     id: 16,
@@ -142,6 +157,7 @@ const medievalRecipes = [
     category: "dessert",
     allergen: "egg",
     recette: "https://recettemedievale.fr/tourte-aux-pommes-2/",
+    quantity: 0,
   },
   {
     id: 17,
@@ -151,6 +167,7 @@ const medievalRecipes = [
     category: "main course",
     allergen: "-",
     recette: "",
+    quantity: 0,
   },
   {
     id: 18,
@@ -160,6 +177,7 @@ const medievalRecipes = [
     category: "main course",
     allergen: "-",
     recette: "https://recettemedievale.fr/cormary/",
+    quantity: 0,
   },
   {
     id: 19,
@@ -169,6 +187,7 @@ const medievalRecipes = [
     category: "drink",
     allergen: "-",
     recette: "https://recettemedievale.fr/ambroisie/",
+    quantity: 0,
   },
   {
     id: 20,
@@ -178,6 +197,7 @@ const medievalRecipes = [
     category: "drink",
     allergen: "-",
     recette: "",
+    quantity: 0,
   },
   {
     id: 21,
@@ -187,6 +207,7 @@ const medievalRecipes = [
     category: "main course",
     allergen: "orge",
     recette: "https://recettemedievale.fr/espinarde-en-brouet/",
+    quantity: 0,
   },
 ];
 
