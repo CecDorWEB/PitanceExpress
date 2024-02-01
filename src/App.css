@@ -15,11 +15,17 @@ body {
 
 #root {
   --light-color: #f2eee9;
-  --red-color: #701920;
+  --red-color: rgb(112, 25, 32);
   --gray-color: #596e79;
+
 
   --font-title: "OldLondon";
   --font-text: "Macondo", "cursive";
+
+
+  --border-radius-button: 13px;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
 }
 
 button {

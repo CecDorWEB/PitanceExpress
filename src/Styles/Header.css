@@ -1,0 +1,60 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 7rem;
+}
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 10px;
+  height: 50px;
+  padding: 1rem;
+  border: solid lightgray 0.1px;
+  border-radius: 13px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.burger-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  width: 15px;
+  height: 1px;
+  background-color: var(--red-color);
+  margin: 2px 0;
+  transition: 0.4s;
+  color: var(--light-color);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 120px;
+  height: 160px;
+  right: 0;
+  width: 100%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.menu li {
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+  list-style-type: none;
+}
+
+.menu a:hover {
+  color: var(--red-color);
+}
+li a:visited {
+  color: black;
+}

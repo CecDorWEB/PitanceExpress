@@ -9,6 +9,7 @@ import Menu from "./Pages/Menu";
 import Produit from "./Pages/Produit";
 import Favorite from "./Pages/Favorite";
 import Cash from "./Pages/Cash";
+import Paiement from "./Components/Paiement";
 
 import "./index.css";
 
@@ -35,6 +36,14 @@ const router = createBrowserRouter([
       {
         path: "/Cash",
         element: <Cash />,
+      },
+      {
+        path: "/Paiement",
+        element: <Paiement />,
+      },
+      {
+        path: "/Produit/:id",
+        element: <Produit />,
       },
     ],
   },

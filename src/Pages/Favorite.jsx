@@ -1,9 +1,14 @@
-import "../Styles/favorite.css"
+import "../Styles/favorite.css";
 
 function Favorite() {
   return (
-    <div>Favorite</div>
-  )
+    <div className="myfavoris">
+      <h1>Mets Favoris</h1>
+      <div>
+        <p>Carte</p>
+      </div>
+    </div>
+  );
 }
 
-export default Favorite
+export default Favorite;
