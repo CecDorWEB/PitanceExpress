@@ -27,7 +27,7 @@ const BurgerMenu = () => {
 
         {isOpen && (
           <div className="menu">
-            <ul>
+            <ul className="listBox">
               <li>
                 <Link to="/">Home</Link>
               </li>

@@ -3,7 +3,7 @@
   width: 100%;
   height: 5rem;
   border: solid 0.1 gray;
-  border-radius: 15px;
+  border-radius: 13px 13px 0px 0px;
   align-items: center;
   justify-content: space-evenly;
   background-color: #fff;
