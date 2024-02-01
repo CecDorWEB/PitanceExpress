@@ -1,0 +1,32 @@
+.home_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_title {
+  font-family: var(--font-title);
+  margin: 2rem;
+  font-size: 3rem;
+}
+
+.home_msg {
+  font-family: var(--font-text);
+  margin: 2rem;
+  line-height: 30px;
+}
+
+.home_button {
+  background-color: var(--red-color);
+  color: white;
+  line-height: 20px;
+  padding: 1rem 1.5rem;
+  width: 10rem;
+  border-radius: 13px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.home_img {
+  width: 320px;
+}
