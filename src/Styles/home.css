@@ -19,6 +19,7 @@
 
 .home_button {
   background-color: var(--red-color);
+  font-family: var(--font-text);
   color: white;
   line-height: 20px;
   padding: 1rem 1.5rem;
@@ -27,6 +28,13 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.home_button:hover {
+  background: var(--light_color);
+  color: var(--red-color);
+  transition: all 0.3s ease;
+}
+
 .home_img {
+  margin-top: 1rem;
   width: 320px;
 }

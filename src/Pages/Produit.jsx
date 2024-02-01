@@ -1,13 +1,17 @@
+import { useParams } from "react-router-dom";
 import { useState } from "react";
+
 import "../Styles/produit.css";
 import medievalRecipes from "../medievalRecipes";
 import { FavoriteButton } from "../Components/FavoriteButton";
 
 function Produit() {
-  const recipe = medievalRecipes[3];
-  console.log(recipe);
+  const { id } = useParams();
+  const recipe = medievalRecipes[id - 1];
   //Il faudra afficher le résultat de la carte sur laquelle on aura cliqué.
-
+  
+  console.log(recipe);
+  
   const [stateQuantity, setStateQuantity] = useState(recipe.quantity);
 
   const [favoriteImgIndex, setFavoriteImgIndex] = useState(0);
@@ -21,7 +25,7 @@ function Produit() {
       setStateQuantity(stateQuantity - 1);
     }
   };
-  console.log("new", recipe.quantity);
+
   return (
     <div className="produit">
       <section>
