@@ -1,11 +1,17 @@
+/* eslint-disable react/prop-types */
 import { useRef } from "react";
+import { useState } from "react";
+import PropTypes from "prop-types";
 
 import medievalRecipes from "../medievalRecipes";
+import PopUp from "../Components/PopUp";
+
 // import { Link } from "react-router-dom";
 
 import "../Styles/cash.css";
 
 function Cash() {
+  const [buttonPopup, setButtonPopup] = useState(false);
   const recipe = medievalRecipes;
 
   const payCard = useRef(null);
@@ -16,6 +22,15 @@ function Cash() {
 
   const closePayModal = () => {
     payCard.current.close();
+  };
+
+  const openPopup = () => {
+    setButtonPopup(true);
+  }
+
+  const FunctionPopup = () => {
+    openPopup(true);
+    closePayModal();
   };
 
   return (
@@ -34,20 +49,22 @@ function Cash() {
       </div>
       <div className="Cash_Button">
         <dialog ref={payCard} className="Modal_Container">
-          <button className="Close_Modal" onClick={closePayModal}>X</button>
+          <button className="Close_Modal" onClick={closePayModal}>
+            X
+          </button>
           <div className="Paye_Modal">
             <h2>Acquittez la somme</h2>
             <div className="Code_Card">
               <label htmlFor="">Code de la carte</label>
-              <input type="text" required/>
+              <input type="text" required />
             </div>
             <div className="Date_Card">
               <label htmlFor="">date de validité</label>
-              <input type="text" required/>
+              <input type="text" required />
             </div>
             <div className="Crypto">
               <label htmlFor="">criptogramme</label>
-              <input type="text" required/>
+              <input type="text" required />
             </div>
             <div className="Checkbox_Paye">
               <input type="checkbox" />
@@ -59,10 +76,11 @@ function Cash() {
               </a>
             </div>
             <div className="Cash_Paid_Modal">
-              <button>Acquitter</button>
+              <button onClick={() => FunctionPopup()}>Acquitter</button>
             </div>
           </div>
         </dialog>
+        <PopUp trigger={buttonPopup} setTrigger={setButtonPopup} />
 
         <button className="Cash_Paid" onClick={openPayModal}>
           Acquittez !
@@ -73,3 +91,9 @@ function Cash() {
 }
 
 export default Cash;
+
+
+PopUp.propTypes = {
+  trigger: PropTypes.bool.isRequired,
+  setTrigger: PropTypes.func.isRequired,
+};
