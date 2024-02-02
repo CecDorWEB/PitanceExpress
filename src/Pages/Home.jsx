@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 
 import "../Styles/home.css";
+import MusicHeader from "../Components/MusicHeader";
 
 function Home() {
   return (
     <div className="home_page">
+      <MusicHeader />
       <h1 className="home_title">Pitance Express</h1>
       <p className="home_msg">
         Oyé Oyé ! Soyez les bienvenues sur les pages électroniques de Pitance

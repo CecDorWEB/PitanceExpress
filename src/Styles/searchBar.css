@@ -1,15 +1,14 @@
+div > .search_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .search_bar {
   position: relative;
 }
 
 .search_button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 10px;
-}
-
-.search_button > img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -23,9 +22,16 @@
   margin: auto;
 }
 
+.search_button_img {
+  margin-top: 1rem;
+  position: relative;
+  left: 80px;
+}
+
 .search_input {
-  text-align: center;
-  padding: 0.6rem 2.6rem 0.6rem 40px;
+  margin-top: 1rem;
+  text-align: end;
+  padding: 0.6rem 2.6rem 0.6rem 1rem;
   border: none;
   border-radius: 9px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);

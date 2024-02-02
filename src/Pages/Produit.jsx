@@ -38,9 +38,9 @@ function Produit() {
           />
         </div>
         <div className="description">
-          <p>Category: {recipe.category}</p>
-          <p>Allergen: {recipe.allergen}</p>
-          <h3>Price: {recipe.price} ecus</h3>
+          <p>Categorie: {recipe.category}</p>
+          <p>Allergènes: {recipe.allergen}</p>
+          <h3>Prix: {recipe.price} ecus</h3>
         </div>
         <div className="quantity">
           <button onClick={removeArticle}>-</button>

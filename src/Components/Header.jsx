@@ -29,16 +29,16 @@ const BurgerMenu = () => {
           <div className="menu">
             <ul className="listBox">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/">Accueil</Link>
               </li>
               <li>
                 <Link to="/Menu">Menu</Link>
               </li>
               <li>
-                <Link to="/Favorite">Favorite</Link>
+                <Link to="/Favorite">Favoris</Link>
               </li>
               <li>
-                <Link to="/Cash">Cash</Link>
+                <Link to="/Cash">Réglement</Link>
               </li>
               <li>
                 <Link to="/Equipe">Equipe</Link>

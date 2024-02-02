@@ -10,12 +10,10 @@ function Menu() {
   const recipe = medievalRecipes;
   return (
     <div>
+      <SearchBar />
       <BandeauPromo />
       <FiltersMenu />
-      <CardRecipe recipe={recipe} />
-
-      <h2>Menu</h2>
-      <SearchBar />
+      <CardRecipe />
     </div>
   );
 }

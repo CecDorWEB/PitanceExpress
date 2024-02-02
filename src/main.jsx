@@ -39,7 +39,15 @@ const router = createBrowserRouter([
         element: <Equipe />,
       },
       {
+        path: "/Cash/",
+        element: <Cash />,
+      },
+      {
         path: "/Cash/:id",
+        element: <Cash />,
+      },
+      {
+        path: "/Cash",
         element: <Cash />,
       },
       {
