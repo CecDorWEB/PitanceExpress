@@ -12,7 +12,7 @@ import PopUp from "../Components/PopUp";
 import "../Styles/cash.css";
 
 function Cash() {
-  const { basket } = useContext(FavoriteContext);
+  const { basket, setBasket } = useContext(FavoriteContext);
   console.info(basket);
 
   const [buttonPopup, setButtonPopup] = useState(false);
@@ -36,6 +36,11 @@ function Cash() {
     closePayModal();
   };
 
+  const removeFromBasket = (id) => {
+    const updatedBasket = basket.filter((item) => item.id !== id);
+    setBasket(updatedBasket);
+  };
+
   const calculBasketSum = () => {
     return basket.reduce(
       (accumulator, recipe) => accumulator + recipe.price,
@@ -52,6 +57,12 @@ function Cash() {
             <img src={recipe.img} alt="Img de la nourriture"></img>
             <p>{recipe.name}</p>
             <p>{recipe.price} ecus</p>
+            <button onClick={() => removeFromBasket(recipe.id)} className="bin">
+              <img
+                src="src/assets/bin.png"
+                alt="Retirer l'article du panier."
+              />
+            </button>
           </div>
         ))}
       </div>
