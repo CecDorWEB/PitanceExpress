@@ -43,7 +43,7 @@ figure > figcaption > h1 {
   transform: translate(0, 40%);
 }
 
-.basket a {
+.basket {
   display: flex;
   align-items: center;
   gap: 0.5em;
@@ -53,11 +53,11 @@ figure > figcaption > h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.basket a > img {
+.basket > img {
   width: 25px;
 }
 
-.basket a > p {
+.basket > p {
   padding-left: 0.3em;
   font-family: var(--font-text);
   font-size: 18px;

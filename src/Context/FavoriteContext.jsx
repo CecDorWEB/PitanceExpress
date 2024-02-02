@@ -8,6 +8,11 @@ export function FavoriteProvider({ children }) {
   const [quantityTotal, setQuantityTotal] = useState(0);
   const [filterValue, setFilterValue] = useState("");
   const [activeCategory, setActiveCategory] = useState("");
+  const [basket, setBasket] = useState([]);
+
+  //const addBasket = (recipe) => {
+  //setBasket([...basket, recipe]);
+  // };
 
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
@@ -21,6 +26,8 @@ export function FavoriteProvider({ children }) {
         setFilterValue,
         activeCategory,
         setActiveCategory,
+        basket,
+        setBasket,
       }}
     >
       {children}
