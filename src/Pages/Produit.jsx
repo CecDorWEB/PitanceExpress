@@ -30,9 +30,11 @@ function Produit() {
           <p>Allergènes: {recipe.allergen}</p>
           <h3>Prix: {recipe.price} ecus</h3>
         </div>
-        <Link to="/Menu" className="RedButton">
-          retour
-        </Link>
+        <div className="buttonPlace">
+          <Link to="/Menu" className="RedButton">
+            retour
+          </Link>
+        </div>
       </section>
     </div>
   );
