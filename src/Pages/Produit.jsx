@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useContext, useState } from "react";
 
 import "../Styles/produit.css";
@@ -12,18 +12,6 @@ function Produit() {
 
   const recipe = medievalRecipes[id - 1];
   //Il faudra afficher le résultat de la carte sur laquelle on aura cliqué.
-
-  const [stateQuantity, setStateQuantity] = useState(recipe.quantity);
-
-  const addArticle = () => {
-    setStateQuantity(stateQuantity + 1);
-  };
-
-  const removeArticle = () => {
-    if (stateQuantity > 0) {
-      setStateQuantity(stateQuantity - 1);
-    }
-  };
 
   return (
     <div className="produit">
@@ -42,12 +30,9 @@ function Produit() {
           <p>Allergènes: {recipe.allergen}</p>
           <h3>Prix: {recipe.price} ecus</h3>
         </div>
-        <div className="quantity">
-          <button onClick={removeArticle}>-</button>
-          <div>{stateQuantity}</div>
-          <button onClick={addArticle}>+</button>
-        </div>
-        <button className="RedButton">Ajouter</button>
+        <Link to="/Menu" className="RedButton">
+          retour
+        </Link>
       </section>
     </div>
   );
