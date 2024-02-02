@@ -22,14 +22,14 @@ function PopUp({ trigger, setTrigger }) {
           </p>
         </div>
         <div className="Service">
-          <h5>Prit en charge part :</h5>
+          <h5>Pris en charge par :</h5>
           <h6>Abdou et Kévin</h6>
         </div>
         <div className="Time_Desserve">
           <p>Temps de livraison : 35min</p>
           <p>
-            Désolé messire mais nous n'avons pas choisi les meilleurs livreurs,
-            ils sont en carriole et dotés de deux mains gauches
+            Désolé messire, mais nous n'avons pas choisi les meilleurs livreurs,
+            ils sont en carriole et dotés de deux mains gauches...
           </p>
         </div>
       </div>

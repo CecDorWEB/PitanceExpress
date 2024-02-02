@@ -21,8 +21,10 @@ function Footer() {
       </Link>
       <span className="spanLine"></span>
       <Link to="/Cash">
-        <p className="exposant">{basket.length}</p>
-        <button className="bottomIcon4"></button>
+        <div className="cumulQuantities">
+          <button className="bottomIcon4"></button>
+          <p className="exposant">{basket.length}</p>
+        </div>
       </Link>
     </div>
   );
