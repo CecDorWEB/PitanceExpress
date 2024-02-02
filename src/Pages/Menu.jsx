@@ -7,13 +7,15 @@ import SearchBar from "../Components/Searchbar";
 import "../Styles/menu.css";
 
 function Menu() {
-  const recipe = medievalRecipes;
   return (
     <div>
       <SearchBar />
       <BandeauPromo />
       <FiltersMenu />
-      <CardRecipe recipe={recipe} />
+      <CardRecipe recipe={medievalRecipes} />
+
+      <h2>Menu</h2>
+      <SearchBar />
     </div>
   );
 }

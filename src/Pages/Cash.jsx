@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useRef } from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import FavoriteContext from "../Context/FavoriteContext";
 import PropTypes from "prop-types";
 
 import medievalRecipes from "../medievalRecipes";
@@ -11,8 +12,10 @@ import PopUp from "../Components/PopUp";
 import "../Styles/cash.css";
 
 function Cash() {
+  const { basket } = useContext(FavoriteContext);
+  console.info(basket);
+
   const [buttonPopup, setButtonPopup] = useState(false);
-  const recipe = medievalRecipes;
 
   const payCard = useRef(null);
 
@@ -26,26 +29,35 @@ function Cash() {
 
   const openPopup = () => {
     setButtonPopup(true);
-  }
+  };
 
   const FunctionPopup = () => {
     openPopup(true);
     closePayModal();
   };
 
+  const calculBasketSum = () => {
+    return basket.reduce(
+      (accumulator, recipe) => accumulator + recipe.price,
+      0
+    );
+  };
+
   return (
     <div className="Cash_Container">
       <h1>Mon Panier</h1>
       <div className="Cash_Choose_Recipe">
-        <h1>Pitance Express</h1>
-        <h1>{recipe[0].name}</h1>
-        <img src={recipe[0].img}></img>
-        <p>Categrory:{recipe[0].category}</p>
-        <p>Allergen: {recipe[0].allergen}</p>
+        {basket.map((recipe, index) => (
+          <div key={index} className="basket_recipes">
+            <img src={recipe.img} alt="Img de la nourriture"></img>
+            <p>{recipe.name}</p>
+            <p>{recipe.price} ecus</p>
+          </div>
+        ))}
       </div>
-      <h2>Total</h2>
       <div className="Cash_Price">
-        <h4>150 ecus</h4>
+        <h1>Prix total :</h1>
+        <h4 className="totalPrice">{calculBasketSum()}</h4>
       </div>
       <div className="Cash_Button">
         <dialog ref={payCard} className="Modal_Container">
@@ -91,7 +103,6 @@ function Cash() {
 }
 
 export default Cash;
-
 
 PopUp.propTypes = {
   trigger: PropTypes.bool.isRequired,
