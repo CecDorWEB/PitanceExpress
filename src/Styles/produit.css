@@ -3,7 +3,7 @@
   justify-content: center;
   text-align: center;
   margin: 10px auto;
-  margin-bottom: 6rem;
+  margin-bottom: 7rem;
   font-family: var(--font-text);
 }
 .produit .recipe {
@@ -33,25 +33,11 @@
   justify-content: center;
   gap: 15px;
 }
-.quantity {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border: 1px solid var(--gray-color);
-  border-radius: var(--border-radius-button);
-  padding: 10px;
-  margin: 10px 0 25px 0;
-  box-shadow: var(--shadow);
-}
-.quantity button {
-  flex: 1;
-  color: var(--red-color);
-  font-weight: bold;
-}
-.quantity div {
-  flex: 2;
+.buttonPlace {
+  margin-top: 2rem;
 }
 .RedButton {
+  margin-top: 100px;
   border: 2px solid var(--red-color);
   box-shadow: var(--shadow);
   background: var(--red-color);
@@ -59,7 +45,6 @@
   padding: 0.5rem 1.3rem;
   border-radius: var(--border-radius-button);
 }
-
 .RedButton:hover {
   background: var(--light_color);
   color: var(--red-color);

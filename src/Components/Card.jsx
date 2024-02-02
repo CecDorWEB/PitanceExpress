@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
@@ -18,7 +19,10 @@ function Card({ recipe, id, img, name, quantity }) {
   const { setBasket, basket } = useContext(FavoriteContext);
 
   const addQuantity = () => {
-    setBasket([...basket, recipe]);
+    if (stateQuantity > 0) {
+      const newBasket = Array.from({ length: stateQuantity }, () => recipe);
+      setBasket([...basket, ...newBasket]);
+    }
   };
 
   const positiveCount = () => {
