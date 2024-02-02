@@ -9,6 +9,7 @@ import "../Styles/menu.css";
 function Menu() {
   return (
     <div>
+      <SearchBar />
       <BandeauPromo />
       <FiltersMenu />
       <CardRecipe recipe={medievalRecipes} />

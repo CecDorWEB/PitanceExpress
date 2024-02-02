@@ -3,6 +3,7 @@
   justify-content: center;
   text-align: center;
   margin: 10px auto;
+  margin-bottom: 6rem;
   font-family: var(--font-text);
 }
 .produit .recipe {
@@ -63,4 +64,8 @@
   background: var(--light_color);
   color: var(--red-color);
   transition: all 0.3s ease;
+}
+
+.favorite img {
+  max-width: 30px;
 }

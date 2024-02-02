@@ -7,6 +7,7 @@ import Card from "./Card";
 
 function CardRecipe({ recipe }) {
   /* FORMULE POUR FILTRER */
+
   const { filterValue } = useContext(FavoriteContext);
 
   return (

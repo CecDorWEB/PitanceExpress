@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 12px;
+  margin-bottom: 5rem;
 }
 
 .cardRecipe {
@@ -33,6 +33,11 @@ figure > figcaption > h1 {
   font-size: 18px;
   padding: 1em 0.5em 0.5em 1em;
   min-height: 4em;
+}
+
+figcaption {
+  display: flex;
+  align-items: center;
 }
 
 .buttons_voir_panier {
