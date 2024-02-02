@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import FavoriteContext from "../Context/FavoriteContext";
 import "../Styles/menu.css";
+import { FavoriteButton } from "./FavoriteButton";
 
 // eslint-disable-next-line react/prop-types
 function Card({ recipe, id, img, name, quantity }) {
+  /* FONCTION FAVORIS */
+  const { setFavorite, favorite } = useContext(FavoriteContext);
+
   /* FORMULE POUR QUANTITÉ INCRÉMENTÉE */
 
   const [stateQuantity, setStateQuantity] = useState(quantity);
@@ -16,8 +20,6 @@ function Card({ recipe, id, img, name, quantity }) {
   const addQuantity = () => {
     setBasket([...basket, recipe]);
   };
-
-  // setBasket([...basket, unARTICLE]);
 
   const positiveCount = () => {
     setStateQuantity(stateQuantity + 1);
@@ -33,6 +35,11 @@ function Card({ recipe, id, img, name, quantity }) {
       <img src={img} alt="Img des recettes médiévales" />
       <figcaption>
         <h1>{name}</h1>
+        <FavoriteButton
+          recipe={recipe}
+          setFavorite={setFavorite}
+          favorite={favorite}
+        />
       </figcaption>
       <div className="button_count">
         <button className="moins" onClick={notNegativeCount}>
