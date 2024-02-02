@@ -4,7 +4,7 @@ import { useState, useContext } from "react";
 import FavoriteContext from "../Context/FavoriteContext";
 import PropTypes from "prop-types";
 
-import medievalRecipes from "../medievalRecipes";
+// import medievalRecipes from "../medievalRecipes";
 import PopUp from "../Components/PopUp";
 
 // import { Link } from "react-router-dom";
@@ -55,6 +55,7 @@ function Cash() {
         {basket.map((recipe, index) => (
           <div key={index} className="basket_recipes">
             <img src={recipe.img} alt="Img de la nourriture"></img>
+            <div className="basket_recipe_desc">
             <p>{recipe.name}</p>
             <p>{recipe.price} ecus</p>
             <button onClick={() => removeFromBasket(recipe.id)} className="bin">
@@ -68,7 +69,7 @@ function Cash() {
       </div>
       <div className="Cash_Price">
         <h1>Prix total :</h1>
-        <h4 className="totalPrice">{calculBasketSum()}</h4>
+        <h4 className="totalPrice">{calculBasketSum()} ecus</h4>
       </div>
       <div className="Cash_Button">
         <dialog ref={payCard} className="Modal_Container">

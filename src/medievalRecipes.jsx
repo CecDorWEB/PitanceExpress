@@ -13,7 +13,7 @@ const medievalRecipes = [
     id: 2,
     name: "Façou à l’oseille",
     img: "https://recettemedievale.fr/wp-content/uploads/2018/11/farcou-300x225.jpg.webp",
-    price: 1,
+    price: 4,
     category: "main course",
     allergen: "wheat",
     lien: "https://recettemedievale.fr/farcou-a-loseille/",
