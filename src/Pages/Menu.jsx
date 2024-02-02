@@ -13,7 +13,7 @@ function Menu() {
       <SearchBar />
       <BandeauPromo />
       <FiltersMenu />
-      <CardRecipe />
+      <CardRecipe recipe={recipe} />
     </div>
   );
 }
