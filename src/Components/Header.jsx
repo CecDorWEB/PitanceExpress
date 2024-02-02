@@ -40,6 +40,9 @@ const BurgerMenu = () => {
               <li>
                 <Link to="/Cash">Cash</Link>
               </li>
+              <li>
+                <Link to="/Equipe">Equipe</Link>
+              </li>
             </ul>
           </div>
         )}
