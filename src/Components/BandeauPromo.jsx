@@ -11,7 +11,7 @@ function BandeauPromo() {
           moitié du tribut habituel.
         </p>
         <button>
-          Je souhaite m&apos;octoryer les avantages de cette offrance !
+          Je souhaite m&apos;octoryer les avantages de cette offrande !
         </button>
       </div>
       <div className="right">

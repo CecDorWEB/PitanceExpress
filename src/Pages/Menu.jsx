@@ -9,12 +9,10 @@ import "../Styles/menu.css";
 function Menu() {
   return (
     <div>
+      <SearchBar />
       <BandeauPromo />
       <FiltersMenu />
       <CardRecipe />
-
-      <h2>Menu</h2>
-      <SearchBar />
     </div>
   );
 }
