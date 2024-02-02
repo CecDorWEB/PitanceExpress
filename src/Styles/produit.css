@@ -3,6 +3,7 @@
   justify-content: center;
   text-align: center;
   margin: 10px auto;
+  margin-bottom: 6rem;
   font-family: var(--font-text);
 }
 .produit .recipe {
