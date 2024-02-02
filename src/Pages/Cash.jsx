@@ -89,11 +89,11 @@ function Cash() {
               <input type="text" required />
             </div>
             <div className="Date_Card">
-              <label htmlFor="">date de validité</label>
+              <label htmlFor="">Date de validité</label>
               <input type="text" required />
             </div>
             <div className="Crypto">
-              <label htmlFor="">criptogramme</label>
+              <label htmlFor="">Cryptogramme</label>
               <input type="text" required />
             </div>
             <div className="Checkbox_Paye">

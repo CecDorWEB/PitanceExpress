@@ -56,3 +56,18 @@ button {
   height: 50px;
   margin: 0.5%;
 }
+
+.cumulQuantities {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-text);
+  color: #fff;
+  font-size: 20px;
+  gap: 15px;
+}
+
+.cumulQuantities > p {
+  background-color: var(--red-color);
+  border-radius: 5px;
+  padding: 5px;
+}
