@@ -1,13 +1,17 @@
 import "../Styles/menu.css";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import FavoriteContext from "../Context/FavoriteContext";
 import medievalRecipes from "../medievalRecipes";
 
 function FiltersMenu() {
   const recipe = medievalRecipes;
-  const [activeCategory, setActiveCategory] = useState("");
+  const [activeCategory, setActiveCategory] = useState("main course");
 
   const { filterValue, setFilterValue } = useContext(FavoriteContext);
+
+  useEffect(() => {
+    setFilterValue(activeCategory);
+  }, [activeCategory, setFilterValue]);
 
   const filterMenu = (value) => {
     setFilterValue(value);
