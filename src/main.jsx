@@ -9,6 +9,7 @@ import Menu from "./Pages/Menu";
 import Produit from "./Pages/Produit";
 import Favorite from "./Pages/Favorite";
 import Cash from "./Pages/Cash";
+import Equipe from "./Pages/Equipe";
 import Paiement from "./Components/Paiement";
 
 import "./index.css";
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/Favorite",
         element: <Favorite />,
+      },
+      {
+        path: "/Equipe",
+        element: <Equipe />,
       },
       {
         path: "/Cash/:id",
