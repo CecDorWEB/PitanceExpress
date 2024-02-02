@@ -1,19 +1,19 @@
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 import "../Styles/produit.css";
+import FavoriteContext from "../Context/FavoriteContext";
 import medievalRecipes from "../medievalRecipes";
 import { FavoriteButton } from "../Components/FavoriteButton";
 
 function Produit() {
   const { id } = useParams();
+  const { setFavorite, favorite } = useContext(FavoriteContext);
 
   const recipe = medievalRecipes[id - 1];
   //Il faudra afficher le résultat de la carte sur laquelle on aura cliqué.
 
   const [stateQuantity, setStateQuantity] = useState(recipe.quantity);
-
-  const [favoriteImgIndex, setFavoriteImgIndex] = useState(0);
 
   const addArticle = () => {
     setStateQuantity(stateQuantity + 1);
@@ -33,8 +33,8 @@ function Produit() {
           <h1>{recipe.name}</h1>
           <FavoriteButton
             recipe={recipe}
-            favoriteImgIndex={favoriteImgIndex}
-            setFavoriteImgIndex={setFavoriteImgIndex}
+            setFavorite={setFavorite}
+            favorite={favorite}
           />
         </div>
         <div className="description">

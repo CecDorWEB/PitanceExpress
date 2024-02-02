@@ -1,12 +1,13 @@
+/* eslint-disable react/prop-types */
 import "../Styles/menu.css";
 import { useContext, useState } from "react";
-import medievalRecipes from "../medievalRecipes";
 import FavoriteContext from "../Context/FavoriteContext";
 import { Link } from "react-router-dom";
+import { FavoriteButton } from "./FavoriteButton";
 
-function CardRecipe() {
-  const recipe = medievalRecipes;
-
+function CardRecipe({ recipe }) {
+  console.log("toutes les rectees", recipe);
+  const { setFavorite, favorite } = useContext(FavoriteContext);
   const [stateQuantity, setStateQuantity] = useState(
     recipe.map((recipe) => recipe.quantity)
   );
@@ -26,7 +27,7 @@ function CardRecipe() {
   };
   console.info(stateQuantity);
 
-  const { filterValue, setFilterValue } = useContext(FavoriteContext);
+  const { filterValue } = useContext(FavoriteContext);
 
   return (
     <section className="cardRecipe_container">
@@ -37,6 +38,11 @@ function CardRecipe() {
             <img src={recipe.img} alt="Img des recettes médiévales" />
             <figcaption>
               <h1>{recipe.name}</h1>
+              <FavoriteButton
+                recipe={recipe}
+                setFavorite={setFavorite}
+                favorite={favorite}
+              />
             </figcaption>
             <div className="button_count">
               <button className="moins" onClick={() => notNegativeCount(index)}>
