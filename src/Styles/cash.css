@@ -76,6 +76,11 @@
     cursor: pointer;
 }
 
+.bin > img {
+    width: 30px;
+    cursor: pointer;
+  }
+
 .Cash_Price {
   display: flex;
   justify-content: center;
@@ -212,7 +217,4 @@
   background: rgba(red, green, rgba(0, 0, 255, 0.02), alpha);
 }
 
-.bin > img {
-  width: 30px;
-  cursor: pointer;
-}
+

@@ -56,14 +56,20 @@ function Cash() {
           <div key={index} className="basket_recipes">
             <img src={recipe.img} alt="Img de la nourriture"></img>
             <div className="basket_recipe_desc">
-            <p>{recipe.name}</p>
-            <p>{recipe.price} ecus</p>
-            <button onClick={() => removeFromBasket(recipe.id)} className="bin">
-              <img
-                src="src/assets/bin.png"
-                alt="Retirer l'article du panier."
-              />
-            </button>
+              <p>{recipe.name}</p>
+              <p>{recipe.price} ecus</p>
+            </div>
+            <div className="Poubelle">
+              <button
+                onClick={() => removeFromBasket(recipe.id)}
+                className="bin"
+              >
+                <img
+                  src="src/assets/bin.png"
+                  alt="Retirer l'article du panier."
+                />
+              </button>
+            </div>
           </div>
         ))}
       </div>
