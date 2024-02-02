@@ -35,6 +35,11 @@ figure > figcaption > h1 {
   min-height: 4em;
 }
 
+figcaption {
+  display: flex;
+  align-items: center;
+}
+
 .buttons_voir_panier {
   display: flex;
   flex-direction: row;

@@ -1,12 +1,16 @@
+import { useState } from "react";
 /* eslint-disable react/prop-types */
-import { useContext } from "react";
-import FavoriteContext from "../Context/FavoriteContext";
+export function FavoriteButton({ setFavorite, favorite, recipe }) {
+  const favoriteState = () => {
+    if (favorite.includes(recipe)) {
+      return 1;
+    } else {
+      return 0;
+    }
+  };
 
-export function FavoriteButton({
-  favoriteImgIndex,
-  setFavoriteImgIndex,
-  recipe,
-}) {
+  const [favoriteImgIndex, setFavoriteImgIndex] = useState(favoriteState());
+
   const imgSrc = [
     { src: "/src/assets/favoris.png" },
     {
@@ -14,18 +18,19 @@ export function FavoriteButton({
     },
   ];
 
-  const { setFavorite, favorite } = useContext(FavoriteContext);
+  console.log(favoriteImgIndex);
 
   const handleChangeImg = () => {
-    if (favoriteImgIndex === 0) {
-      setFavoriteImgIndex(1);
-      setFavorite([...favorite, recipe]);
-    } else {
+    if (favorite.includes(recipe)) {
       setFavoriteImgIndex(0);
-      setFavorite(favorite.filter((element) => element !== recipe));
+      const removeFavorite = favorite.filter((fav) => fav !== recipe);
+      setFavorite(removeFavorite);
+    } else {
+      setFavorite([...favorite, recipe]);
+
+      setFavoriteImgIndex(1);
     }
   };
-  console.log("favoris", favorite);
 
   return (
     <button className="favorite">
