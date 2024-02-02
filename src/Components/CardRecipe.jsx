@@ -3,6 +3,8 @@ import { useState } from "react";
 import medievalRecipes from "../medievalRecipes";
 import { Link } from "react-router-dom";
 
+import "../Styles/Footer.css";
+
 function CardRecipe() {
   const recipe = medievalRecipes;
 
@@ -26,6 +28,12 @@ function CardRecipe() {
   };
   console.info(stateQuantity);
 
+  // const sum = stateQuantity.reduce(
+  //   (accumulator, currentValue) => accumulator + currentValue,
+  //   0
+  // );
+  // console.info(stateQuantity);
+
   return (
     <section className="cardRecipe_container">
       {recipe.map((recipe, index) => (
@@ -39,6 +47,7 @@ function CardRecipe() {
               -
             </button>
             <p>{stateQuantity[index]}</p>
+            {/* <p>{sum}</p> */}
             <button className="plus" onClick={() => positiveCount(index)}>
               +
             </button>

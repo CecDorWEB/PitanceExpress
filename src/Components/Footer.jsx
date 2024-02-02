@@ -1,5 +1,9 @@
 import "../Styles/Footer.css";
+// import FavoriteContext from "../Context/FavoriteContext";
+
+// import { useContext } from "react";
 import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <div className="bottomNav">
@@ -21,4 +25,26 @@ function Footer() {
     </div>
   );
 }
+
 export default Footer;
+// const { stateQuantity, setStateQuantity } = useContext(FavoriteContext);
+
+// const sum = stateQuantity.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue,
+//   0
+// );
+// const addCart = () => {
+//   setStateQuantity([...stateQuantity, sum]);
+// };
+
+// // const sum = (index) => {
+// //   const newTable = [...stateQuantity];
+// //   newTable[index];
+// //   setStateQuantity(newTable);
+// // };
+
+{
+  /* {stateQuantity.map((sum, index) => (
+        <p key={index}>{sum}</p>
+      ))} */
+}

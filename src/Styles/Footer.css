@@ -2,12 +2,14 @@
   display: flex;
   width: 100%;
   height: 5rem;
-  border: solid 0.1 gray;
+  border: thin gray;
   border-radius: 13px 13px 0px 0px;
   align-items: center;
   justify-content: space-evenly;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 5, 5, 0.1);
+  position: fixed;
+  bottom: 0;
 }
 
 .bottomIcon1 {
@@ -50,7 +52,7 @@ button {
 
 .spanLine {
   background-color: lightgray;
-  width: 0.7px;
+  width: 1px;
   height: 50px;
   margin: 0.5%;
 }

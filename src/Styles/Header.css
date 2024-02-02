@@ -39,10 +39,13 @@
   text-align: center;
   position: absolute;
   top: 120px;
-  height: 160px;
+  height: 180px;
   right: 0;
   width: 100%;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  background-color: whitesmoke;
+  border-radius: 13px;
 }
 
 .menu li {
@@ -50,6 +53,7 @@
   padding: 10px;
   margin: 5px;
   list-style-type: none;
+  font-family: var(--font-text);
 }
 
 .menu a:hover {
