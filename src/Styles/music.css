@@ -1,0 +1,23 @@
+.Music {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  top: 8px;
+}
+
+.audioMusic {
+  height: 30px;
+  width: 300px;
+}
+
+.btn {
+  background-color: transparent;
+  opacity: 50%;
+  height: 35px;
+}
+
+.icon {
+  width: 25px;
+  margin: 0.3em;
+}
